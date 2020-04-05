@@ -1,4 +1,5 @@
 // // Create a new list item when clicking on the "Add" button
+let addButton = document.getElementById('addButton');
 const generator = () => {
     let li = document.createElement('LI');
     let userInput = document.getElementById('userInput').value;
@@ -27,5 +28,5 @@ const generator = () => {
             parent.style.display = "none";
         }
     }
-
 };
+addButton.addEventListener("touchstart", generator);
