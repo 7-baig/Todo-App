@@ -5,7 +5,7 @@ html, body {
 body {
     display: flex;  flex-direction: column;
     align-items: center;    justify-content: center;
-    background-image: url(/images/bg-image-5.jpg);
+    background-image: url(bg-image-5.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
