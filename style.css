@@ -26,9 +26,6 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.26);
 }
-#header i {
-    font-size: 3em; padding: 5px;
-}
 #header h1 {
     font-family: monospace; font-size: 4em;
     padding: 5px;   
@@ -130,5 +127,12 @@ body {
     .list-style:nth-child(1) {
         margin-top: 0;
     }
-    
+    /* header */
+    #header {
+    height: 20%;
+    }
+    #header h1 {
+    font-size: 2em;
+    padding: 0px;   
+    }    
 }
