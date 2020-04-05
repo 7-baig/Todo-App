@@ -29,4 +29,4 @@ const generator = () => {
         }
     }
 };
-addButton.addEventListener("touchstart", generator);
+addButton.addEventListener("mousedown", generator);
