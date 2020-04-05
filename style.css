@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;   width: 100%;
+    margin: 0%;     padding: 0%;
+}
+body {
+    display: flex;  flex-direction: column;
+    align-items: center;    justify-content: center;
+    background-image: url(/images/bg-image-5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* main container */
+#main-container {
+    border: 1px solid black;
+    height: 90%;    width: 80%;
+    display: flex;  flex-direction: column;
+    justify-content: flex-start;
+    box-shadow: 9px 9px 9px rgba(0, 0, 0, 0.315);
+}
+/* header */
+#header {
+    height: 20%;
+    display: flex;  justify-content: center;    
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+#header i {
+    font-size: 3em; padding: 5px;
+}
+#header h1 {
+    font-family: monospace; font-size: 4em;
+    padding: 5px;   
+    color: #ffffff;
+    text-shadow: -6px 7px 7px black;
+}
+/* input field */
+#input {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 10%;
+    display: flex;  justify-content: center;    
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+#input #userInput {
+    font-family: monospace;
+    font-size: 1.5em;
+    width: 700px;   height: 30px;
+    margin: 5px;
+    padding-left: 10px;
+    background-color: #ffffff28;
+    border: 1px solid black;
+}
+#input #userInput:focus {
+    background-color: #fff;
+}
+#input #addButton {
+    width: 50px;    height: 35px;    
+    margin: 5px;    border: none;
+    border-radius: 10%; 
+    cursor: pointer;
+}
+#input #addButton:hover {
+    background-color: #55BB3E;
+    color: #ffffff;
+}
+/* list items */
+#list-items {
+    height: 70%;
+    display: flex;  flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+/* UL */
+#list-items #list {
+    margin: 0%;
+    height: 95%;
+    list-style-type: none;
+    display: flex;  flex-direction: column;
+    justify-content: flex-start;  
+    padding: 0%;
+}
+/* for "LI" */
+.list-style {
+    font-family: 'Kalam', cursive;
+    font-size: 20px;    letter-spacing: 0.1em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: flex;  justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-left: 30px;   padding-right: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #000;
+}
+.list-style:nth-child(1) {
+    margin-top: 0;
+}
+.list-style:hover {
+    background-color: rgb(156, 155, 155);
+}
+/* for button */
+.button-style:hover {
+    color: rgb(250, 35, 35);
+    cursor: pointer;
+}
+
+/* media queries */
+@media all and (max-width:480px) {
+    /* input field */
+    #input #userInput {
+        font-family: monospace;
+        font-size: 1em;
+        width: 200px;   height: 25px;
+    }
+    #input #userInput:focus {
+        background-color: #fff;
+    }
+    #input #addButton {
+        width: 40px;    height: 28px;    
+
+    }
+    /* list items */
+    .list-style {
+        font-size: 15px;    letter-spacing: 0.1em;
+    }
+    .list-style:nth-child(1) {
+        margin-top: 0;
+    }
+    
+}
